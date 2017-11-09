@@ -39,7 +39,7 @@ app.use('/', myRoute);
 
 async.waterfall([
     cb=>mongoose.connect('mongodb://shani-countries:123456@ds125365.mlab.com:25365/countries', err => cb(err)),
-    cb=>app.listen(3008, err => cb(err, 'server up'))
+    cb=>app.listen(80, err => cb(err, 'server up'))
     ],
     (err, result)=>{
         if(!err){
