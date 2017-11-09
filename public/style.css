@@ -1,0 +1,121 @@
+nav{
+	background-color: #2ba1d0 !important;
+}
+img{
+	width: 100px;
+	margin: 0 auto;
+}
+th,td{
+	width: 200px;
+}
+.game-container{
+	width:50%;
+	background-color: white;
+	margin: 0 auto;
+	padding-top: 20px;
+	padding-bottom: 20px;
+	box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+}
+@media (max-width: 1064px){
+	.game-container{
+		width: 90%;
+	}
+}
+@media (max-width: 800px){
+	.flag{
+		width: 80% !important;
+	}
+}
+@media (max-width: 680px){
+	#flag{
+		height: 150px !important;
+	}
+}
+.cubes{
+	width: 80%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+.flag{
+	width: 60%;
+	margin: 0 auto;
+	margin-bottom: 15px;
+}
+#flag{
+	width: 100%;
+	border: 1px solid #f1f1f1;
+	height: 227px;
+}
+.btn{
+	width: 100%;
+	height: 50px;
+	outline: none;
+	margin-bottom: 15px;
+	outline: none !important;
+	background-color: #f1f1f1!important;
+	box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+	white-space: unset;
+}
+.col-sm-12{
+	margin: 0 auto !important;
+}
+.center{
+	width: 600px;
+	margin: 0 auto;
+}
+.card-content{
+	height: 150px !important;
+}
+input{
+	width: 80px;
+	margin: 0 auto !important;
+}
+h1, p, .col-xs-12, h3{
+	text-align: center;
+}
+.play{
+	width: 100px;
+	height: 30px;
+	margin: 0 auto !important;
+	box-shadow: 0 8px 5px 0 rgba(0,0,0,0.16), 0 2px 10px 0 rgba(0,0,0,0.12) !important;
+	background: linear-gradient(to right, #f1f1f1 , #2ba1d0);
+	border-radius: 5px;
+	border:none;
+	outline: none !important;
+}
+
+.play:hover{
+	background: linear-gradient(to right, #2ba1d0, #f1f1f1);
+}
+.container{
+	width: 80% !important;
+	text-align: center;
+}
+body{
+	background-color: #f1f1f1!important;
+	font-family: 'Kalam', cursive;
+}
+p{
+	font-size: 20px;
+}
+#final-score, #play-again{
+	width: 50%;
+	text-align: center;
+	margin: 0 auto;
+	font-size: 20px;
+}
+a{
+	color: inherit !important;
+}
+a:hover{
+	text-decoration: none !important;
+}
+#play-again{
+	margin-top: 60px;
+	font-size: 15px;
+}
+#error{
+/*	height: 20px;*/
+	margin-top: 10px;
+	font-size: 15px;
+}

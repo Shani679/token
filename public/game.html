@@ -1,0 +1,25 @@
+<div ng-controller="Game">
+	<div ng-show="amountShow" class="container welcome">
+		<h1>Flags quiz!</h1>
+		<p>Please choose a number between 10 and 25.</p>
+		<input type="number" min="10" max="25" ng-model="amount">
+		<br><br>
+		<button ng-click="play()" class="play">PLAY</button>
+		<div id="error">{{error}}</div>
+	</div>
+	<div class="game-container" ng-show="gameShow">
+		<h3>{{currentLevel}}/{{amount}}</h3>
+		<div class="flag"><img id="flag" src="{{flag}}"></div>
+		<div class="cubes row">
+			<div class="col-xs-12 col-sm-12 col-md-6"><button class="btn b" ng-click="nextLevel('country1')">{{country1}}</button></div>
+			<div class="col-xs-12 col-sm-12 col-md-6"><button class="btn b" ng-click="nextLevel('country2')">{{country2}}</button></div>
+			<div class="col-xs-12 col-sm-12 col-md-6"><button class="btn b" ng-click="nextLevel('country3')">{{country3}}</button></div>
+			<div class="col-xs-12 col-sm-12 col-md-6"><button class="btn b" ng-click="nextLevel('country4')">{{country4}}</button></div>
+		</div>
+	</div>
+	<div class="game-score" ng-show="scoreShow">
+		<h1>Quiz is over...</h1>
+		<div id="final-score">You answered {{score}} correct answers out of {{amount}} questions</div>
+		<div id="play-again"><a href="/index.html#!/game">Click here to play again</a></div>
+	</div> 
+</div>

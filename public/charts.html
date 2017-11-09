@@ -1,0 +1,16 @@
+<div ng-controller="Charts">
+	<div class="row">
+		<div class="col-sm-12 col-md-6">
+			<h5>World population</h5>
+			<input type="range" min="0" max="1377422166" ng-model="range" ng-change="updatePopValue(range)">
+			<div id="range">up to {{range}} people</div>
+			<div id="container1"></div>
+		</div>
+		<div class="col-sm-12 col-md-6">
+			<h5>Countries area</h5>
+			<input type="range" min="0" max="17124442" ng-model="range2" ng-change="updateAreaValue(range2)">
+			<div id="range">Up to {{range2}} square kilometre</div>
+			<div id="container2"></div>
+		</div>
+	</div>
+</div>
